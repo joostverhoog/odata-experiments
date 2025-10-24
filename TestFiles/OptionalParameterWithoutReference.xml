@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:DataServices>
+        <Schema Namespace="Default" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Action Name="Action1">
+                <Parameter Name="Milliseconds" Type="Edm.Int64">
+                    <Annotation Term="Org.OData.Core.V1.OptionalParameter" />
+                </Parameter>
+            </Action>
+            <EntityContainer Name="Container">
+                <ActionImport Name="Action1" Action="Default.Action1"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
