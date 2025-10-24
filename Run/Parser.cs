@@ -6,7 +6,7 @@ namespace Run;
 
 static class Parser
 {
-    private static readonly CsdlReaderSettings Settings = new() { IgnoreUnexpectedAttributesAndElements = true };
+    private static readonly CsdlReaderSettings Settings = new() { IgnoreUnexpectedAttributesAndElements = false };
 
     public static IEdmModel Parse(string content)
     {
